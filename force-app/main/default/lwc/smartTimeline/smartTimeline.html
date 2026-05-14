@@ -1,0 +1,39 @@
+<!-- caseTimeline.html -->
+<template>
+
+    <lightning-card title="">
+        <div class="timeline-container">
+            <!-- ITEM 2 -->
+            <div class="timeline-item">
+                <template if:true={timelineItem}>
+                <!-- HORA -->
+                <div class="timeline-time">
+                    {formattedDate}
+                </div>
+                 <div class="timeline-time">
+                    {formattedTime}
+                </div>
+
+                <!-- LINHA -->
+                <div class="timeline-line-container">
+                    <div class="timeline-icon success">
+                        ✓
+                    </div>
+                </div>
+
+                <!-- CONTEÚDO -->
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <div>
+                            <h2>{timelineItem.title}</h2>
+                            <p>Criado {timelineItem.description}</p>
+                            <p>Status do Case: {timelineItem.status}</p>
+                        </div>
+                    </div>
+                </div>
+                </template>
+            </div>
+
+        </div>
+    </lightning-card>
+</template>

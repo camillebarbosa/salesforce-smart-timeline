@@ -1,0 +1,97 @@
+/* caseTimeline.css */
+
+.timeline-container {
+    padding: 3rem;
+    background: #eeebeb;
+    border-radius: 10px;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.timeline-time {
+    width: 60px;
+    color: #666;
+    font-size: 0.85rem;
+    padding-top: 0.4rem;
+}
+
+.timeline-line-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.timeline-line {
+    width: 2px;
+    background: #d8dde6;
+    flex-grow: 1;
+    margin-top: 0.3rem;
+    min-height: 80px;
+}
+
+.timeline-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    font-size: 16px;
+}
+
+.timeline-icon.danger {
+    background: #ea001e;
+}
+
+.timeline-icon.success {
+    background: #2e844a;
+}
+
+.timeline-content {
+    flex: 1;
+    border-bottom: 1px solid #ecebea;
+    padding-bottom: 1rem;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.timeline-header h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    color: #181818;
+}
+
+.timeline-header p {
+    margin: 0;
+    color: #5c5c5c;
+    font-size: 0.9rem;
+}
+
+.timeline-date {
+    margin-top: 0.75rem;
+    display: inline-block;
+    background: #f3f3f3;
+    border-radius: 999px;
+    padding: 0.2rem 0.75rem;
+    font-size: 0.75rem;
+    color: #444;
+}
+
+.badge-high {
+    --slds-c-badge-color-background: #fde7e9;
+    --slds-c-badge-text-color: #ba0517;
+}
