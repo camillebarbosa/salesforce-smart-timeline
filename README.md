@@ -1,18 +1,154 @@
-# Salesforce DX Project: Next Steps
+Smart Case Timeline 🚀
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Uma timeline inteligente para Salesforce Service Cloud construída com duas abordagens arquiteturais diferentes:
 
-## How Do You Plan to Deploy Your Changes?
+OmniStudio (FlexCard + DataRaptor)
+LWC + Apex
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+O objetivo do projeto é explorar diferentes estratégias de desenvolvimento dentro do ecossistema Salesforce para criação de experiências modernas de atendimento e acompanhamento de Cases.
 
-## Configure Your Salesforce DX Project
+📌 Objetivo
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+A Smart Case Timeline centraliza eventos importantes do ciclo de vida de um Case em uma única visualização cronológica, permitindo que agentes tenham contexto rápido e organizado do atendimento.
 
-## Read All About It
+A timeline foi idealizada para exibir:
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+criação do Case
+mudanças de status
+escalations
+emails enviados/recebidos
+atividades
+comentários internos
+eventos importantes do suporte
+🏗️ Arquitetura do Projeto
+
+O projeto possui duas implementações paralelas para comparação arquitetural.
+
+🔹 Abordagem 1 — OmniStudio
+Tecnologias
+FlexCard
+DataRaptor
+OmniStudio
+Objetivo
+
+Explorar uma abordagem low-code focada em:
+
+velocidade de desenvolvimento
+configuração declarativa
+reutilização
+integração simplificada
+Fluxo
+FlexCard
+↓
+DataRaptor
+↓
+Case Object
+↓
+Renderização da Timeline
+Benefícios
+menor volume de código
+desenvolvimento rápido
+fácil manutenção declarativa
+excelente para cenários enterprise OmniStudio
+🔹 Abordagem 2 — LWC + Apex
+Tecnologias
+Lightning Web Components
+Apex
+DTO Pattern
+Imperative Apex Calls
+Objetivo
+
+Explorar uma abordagem customizada com maior controle sobre:
+
+UI/UX
+performance
+agregação de dados
+lógica de negócio
+Fluxo
+LWC
+↓
+Imperative Apex Call
+↓
+Apex Service Layer
+↓
+DTO Transformation
+↓
+Timeline Rendering
+Benefícios
+maior flexibilidade
+arquitetura escalável
+controle total da experiência
+possibilidade de realtime updates
+suporte para agregação complexa de dados
+🧠 Conceitos abordados
+Salesforce
+Service Cloud
+OmniStudio
+FlexCards
+DataRaptors
+LWC
+Apex
+DTO Pattern
+Front-end
+Dynamic Rendering
+Conditional Rendering
+Component Architecture
+Timeline UI
+Date Formatting
+Arquitetura
+Aggregator Pattern
+Low-code vs Custom Development
+Reactive vs Imperative Calls
+Separation of Concerns
+⚡ Chamada Reativa vs Imperativa
+
+O projeto também explora as diferenças entre:
+
+Reativa (@wire)
+execução automática
+cache automático
+ideal para leitura simples
+Imperativa
+execução manual
+maior controle
+ideal para timelines e componentes complexos
+✅ Funcionalidades da V1
+Exibição do evento de criação do Case
+Nome do criador
+Status inicial
+Formatação de data/hora
+Timeline visual customizada
+Implementação via OmniStudio
+Implementação via LWC + Apex
+📂 Estrutura prevista
+force-app/
+│
+├── lwc/
+│   └── caseTimeline/
+│
+├── classes/
+│   └── CaseTimelineController.cls
+│
+├── omnistudio/
+│   ├── flexcards/
+│   └── dataraptors/
+🎯 Objetivo de estudo
+
+Este projeto foi criado com foco em:
+
+estudo de arquitetura Salesforce
+comparação entre abordagens
+construção de experiência enterprise
+aprofundamento em Service Cloud
+evolução prática em LWC e OmniStudio
+📸 Preview
+OmniStudio Version
+FlexCard + DataRaptor
+abordagem declarativa
+LWC + Apex Version
+componente customizado
+renderização dinâmica
+backend Apex
+📌 Status
+
+🚧 Em desenvolvimento — V1 concluída.
