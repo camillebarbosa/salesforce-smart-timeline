@@ -20,6 +20,7 @@ emails enviados/recebidos
 atividades
 comentários internos
 eventos importantes do suporte
+
 🏗️ Arquitetura do Projeto
 
 O projeto possui duas implementações paralelas para comparação arquitetural.
@@ -50,6 +51,7 @@ menor volume de código
 desenvolvimento rápido
 fácil manutenção declarativa
 excelente para cenários enterprise OmniStudio
+
 🔹 Abordagem 2 — LWC + Apex
 Tecnologias
 Lightning Web Components
@@ -80,6 +82,7 @@ arquitetura escalável
 controle total da experiência
 possibilidade de realtime updates
 suporte para agregação complexa de dados
+
 🧠 Conceitos abordados
 Salesforce
 Service Cloud
@@ -100,6 +103,7 @@ Aggregator Pattern
 Low-code vs Custom Development
 Reactive vs Imperative Calls
 Separation of Concerns
+
 ⚡ Chamada Reativa vs Imperativa
 
 O projeto também explora as diferenças entre:
@@ -112,6 +116,7 @@ Imperativa
 execução manual
 maior controle
 ideal para timelines e componentes complexos
+
 ✅ Funcionalidades da V1
 Exibição do evento de criação do Case
 Nome do criador
@@ -120,6 +125,7 @@ Formatação de data/hora
 Timeline visual customizada
 Implementação via OmniStudio
 Implementação via LWC + Apex
+
 📂 Estrutura prevista
 force-app/
 │
@@ -132,6 +138,7 @@ force-app/
 ├── omnistudio/
 │   ├── flexcards/
 │   └── dataraptors/
+
 🎯 Objetivo de estudo
 
 Este projeto foi criado com foco em:
@@ -141,6 +148,7 @@ comparação entre abordagens
 construção de experiência enterprise
 aprofundamento em Service Cloud
 evolução prática em LWC e OmniStudio
+
 📸 Preview
 OmniStudio Version
 FlexCard + DataRaptor
@@ -149,6 +157,8 @@ LWC + Apex Version
 componente customizado
 renderização dinâmica
 backend Apex
+
 📌 Status
+
 
 🚧 Em desenvolvimento — V1 concluída.
